@@ -2867,7 +2867,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "proofoFsustainabilityenjoyguyzitsnewhaha";
+        const char* pszTimestamp = "The Living Currency";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2879,13 +2879,13 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1413387292;
+        block.nTime    = 1429660800;
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 2085887544;
 
         if (fTestNet)
         {
-            block.nTime    = 1413387293;
+            block.nTime    = 1429660800;
             block.nNonce   = 385270584;
         }
 
